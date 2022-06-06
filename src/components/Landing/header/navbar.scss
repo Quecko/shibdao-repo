@@ -1,0 +1,29 @@
+.main-navbar{
+    background: #00002E;
+    border-bottom: 1px solid #131348;
+    padding: 21px 0;
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end !important;
+    }
+    button{
+        padding: 12px 25px;
+    }
+    i{
+        color: white;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:991px){
+    .main-navbar .btn-yellow{
+        margin: 0 auto !important;
+        margin-top: 30px !important;
+        display: block;
+    }
+    
+}
+@media (max-width:380px){
+    .main-navbar .logo{
+        width: 150px;
+    }
+}
