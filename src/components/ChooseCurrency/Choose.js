@@ -5,6 +5,10 @@ const Choose = () => {
   return (
     <>
     <section className="choose">
+    <div className="wrapper">
+      <img src=".\assests\loading.png" alt="img" className='img-fluid' />
+      <p>Please accept the transaction from MetaMask</p>
+    </div>
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
     <h2>CHOOSE CURRENCY</h2>
     <div className="choose-cards">
