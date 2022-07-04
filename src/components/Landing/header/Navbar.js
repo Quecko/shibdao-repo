@@ -1,7 +1,20 @@
 import React from "react";
+import { useWeb3React } from '@web3-react/core'
+import useAuth from '../../../hooks/useAuth';
 import "./navbar.scss";
 
 const Navbar = () => {
+  const { account } = useWeb3React();
+  const { login, logout } = useAuth();
+  const connectMetaMask = () => {
+    console.log("here", account)
+    localStorage.setItem("connectorId", "injected")
+    if (account) {
+        logout()
+    } else {
+        login("injected")
+    }
+}
   return (
     <>
      <section className="main-navbar">
@@ -24,8 +37,8 @@ const Navbar = () => {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <button className="btn-yellow">Connect Wallet</button>
-          <button className="btn-transparent d-none">Connect Wallet</button>
+       {!account  ? <button className="btn-yellow"  onClick={connectMetaMask}>Connect Wallet</button>:  <button className="btn-yellow" onClick={connectMetaMask}>Disconnect</button>}
+         
         </div>
       </nav>
          </div>
