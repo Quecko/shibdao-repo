@@ -13,9 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" element={<Landing />} />
-          <Route path="/choose" element={<Choose />} />
-          <Route path="/progress" element={<Progress />} />
+        <Route exact path="/"><Landing /></Route>
+        <Route exact path="/choose"><Choose /></Route>
+        <Route exact path="/progress"><Progress /></Route>
         </Switch>
       </Router>
     </>

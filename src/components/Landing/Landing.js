@@ -1,13 +1,12 @@
 
 import React from 'react';
 import '../../app.scss';
-import Banner from './Banner/Banner';
-
+import Banner from "../../components/Landing/Banner/Banner";
 
 function Landing() {
   return (
     <>
-       <Banner/>
+       <Banner />
     </>
   );
 }

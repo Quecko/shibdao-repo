@@ -60,3 +60,31 @@
 .modal-body{
     padding: 0 !important;
 }
+
+.table-responsive{
+  .table{
+    border: 2px solid #FEAE00 !important;
+  }
+    .table thead th{
+        border: unset !important;
+    }
+    th{
+        border: 2px solid #FEAE00;
+        color: #fff;
+    }
+    td{
+        border: 2px solid #FEAE00;
+        color: #fff;
+    }
+}
+.bhbd{
+    width:260px;
+}
+
+@media (max-width:600px){
+    .progress-sec{
+       button{
+        width: 100%;
+       }
+    }
+}
